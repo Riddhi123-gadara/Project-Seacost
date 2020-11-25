@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>health Center</title>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content ="Health Center"/>
+        <link rel="shortrtcut icon"  href="/Neeti/images/gym-1.jpg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Font awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="/Neeti/css/health.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <img class="logo-img" src="/Neeti/images/hotel_home/images/hotel-logo2.png" alt="no image">
+                <a href="#default" class="logo">SeaCoast</a>
+                <div class="header-text">
+                    <ul class="nav-list">
+                        <li class="nav-iteams">
+                            <a href="../jay/home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-iteams">
+                            <a href="../riddhi/index.html" class="nav-link">Rooms</a>
+                        </li>
+                        <li class="nav-iteams">
+                            <a href="Details.html" class="nav-link">Details</a>
+                        </li>
+                        <li class="nav-iteams">
+                            <a href="../Mit/index.html" class="nav-link">Food</a>
+                        </li>
+                        <li class="nav-iteams">
+                            <a href="../jay/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="/Neeti/images/gym-4.jpg" style="width:100%">
+                  <div class="text">Caption One</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="/Neeti/images/gym-2.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="/Neeti/images/gym-3.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/Neeti/images/gym-5.jpg" style="width:100%">
+                    <div class="text">Caption Four</div>
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+            <div style="margin-top: 25px; font-family:cursive; clear: left; font-size: 16px; margin-top: 16px; margin-bottom: 20px;">
+                <p>Anytime Fitness is a franchise of 24-hour health and fitness clubs that is headquartered in Woodbury, Minnesota, 
+                    United States. The company operates over 4,000 franchised locations in 50 countries. The gym facilities are open 
+                    24 hours a day, 365 days of the year.Chuck Runyon, Dave Mortensen, and Jeff Klinger founded Anytime Fitness 
+                    in 2002. Runyon is the CEO of the company.Anytime Fitness was the fastest growing health club franchise in 2014.
+                    In 2015, Entrepreneur Magazine ranked Anytime Fitness first on its global franchise list
+                </p>
+            </div>
+        </main>
+
+        <div id="btn">
+            <div class="btn-group">
+                <button onclick="window.location.href='Details.html'">Next</button>
+             </div>
+        </div>
+     
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-content-brand">
+                        <a href="#" class="footer-logo">
+                            <img class="logo-footer-image" src="/Neeti/images/hotel_home/images/home_logo.JPG" alt="footer-image">
+                        </a>
+                    </div>
+
+                    <div class="social-media-wrap">
+                        &copy;2020 The SeaCoast Hotels Company Limited. All Rights Reserved.
+                        <P><b>Follow us</b></p>
+                        <div class="social-med">
+                            <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
