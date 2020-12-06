@@ -15,6 +15,8 @@
 
     <!--For Responsive Page-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="../Mit/js/popupMenu.js"></script>
 </head>
 <body>
     <header class="header">
@@ -74,7 +76,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Dum Aloo</a></h2>
+                            <button data-modal-target="#modal" class="btn-for-item">Dum Aloo</button>    <!--This will call the JS and create target-->
+                            <div class="modal" id="modal">                                     <!-- Create Model and pass to JS-->
+                                <div class="modal-header">
+                                  <div class="title"><h2>Dum Aloo</h2></div>                   <!-- Create Header of item-->
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">                                       <!-- Create Body of item-->
+                                    <ul>
+                                        <li>Dum Aloo is a potato curry which is made using baby potatoes.”Dum” refers to dum cooking in Indian cuisine where dishes are cooked on low heat by sealing the pot. For example this vegetable biryani uses the same method. Dum cooking enhances the flavor of the dish.</li>
+                                        <li>It made up with baby potatoes, yogurt, spices, cashews & cream, cilantro & kasuri methi. We are making this dish with mustard oil, freshly ground spices and finish with cream and sugar. We serve it with either of jeera rice and naan or with any bread of choice.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -107,7 +121,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Dal Makhani</a></h2>
+                            <button data-modal-target="#modal1" class="btn-for-item">Dal Makhani</button>
+                            <div class="modal" id="modal1">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Dal Makhani</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>This Dal Makhani recipe is a restaurant style version with subtle smoky flavors and creaminess of the lentils. If you love authentic Punjabi food then you are going to love this Dal Makhani even more.</li>
+                                        <li>Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils (known as Urad dal or Kaali Dal in Hindi) and Kidney Beans (known as Rajma in Hindi).</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -140,7 +166,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Palak Paneer</a></h2>
+                            <button data-modal-target="#modal2" class="btn-for-item">Palak Paneer</button>
+                            <div class="modal" id="modal2">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Palak Paneer</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Palak Paneer is a popular Indian dish of Indian cottage cheese cubes in a mild, spiced smooth spinach sauce. This delicious creamy dish is made with fresh spinach leaves, paneer (firm cottage cheese), onions, tomatoes, herbs and spices.</li>
+                                        <li>Paneer contains high quality protein and calcium which aids in weight loss. Since paneer is low in carbs and high in protein it gets digested slowly and hence good for diabetes.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -174,7 +212,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Biryani</a></h2>
+                            <button data-modal-target="#modal3" class="btn-for-item">Biryani</button>
+                            <div class="modal" id="modal3">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Biryani</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Biryani is a rice dish made with layers of rice, spices and traditionally meat (but it our case veggies!). Nothing like a good plate of aromatic biryani! This Vegetable Biryani hits all the right spots with its wonderful aroma and exotic flavors!</li>
+                                        <li>Loaded with veggies, crunchy cashews, warm spices like saffron, herbs like cilantro and mint, this biryani is a delight to the taste buds in every bite!</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -219,8 +269,20 @@
                         </div>
                     </div>
                     <div class="product-content">
-                        <div class="product-title">
-                            <h2><a href="">Khandvi</a></h2>
+                        <div class="product-title">    
+                            <button data-modal-target="#modal4" class="btn-for-item">Khandvi</button>
+                            <div class="modal" id="modal4">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Khandvi</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Khandvi, also known as Patuli, Dahivadi or Suralichi Vadi, is a savory snack in Maharashtrian cuisine as well as in Gujarati cuisine of India. It consists of yellowish, tightly rolled bite-sized pieces and is primarily made of gram flour and yogurt.</li>
+                                        <li>Here we made Khandvi with a mixture of gram flour and buttermilk. Cooking this smooth batter of the gram flour and buttermilk batter is one tricky part.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -253,7 +315,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Gujarati Kadhi</a></h2>
+                            <button data-modal-target="#modal5" class="btn-for-item">Gujarati Kadhi</button>
+                            <div class="modal" id="modal5">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Gujarati Kadhi</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Kadhi is a traditional Gujarati preparation of a wonderful sweet and spicy curd mixture thickened with besan (gram flour), which can be enhanced in many ways using other ingredients like pakoras and koftas.</li>
+                                        <li>Enjoy the Gujarati kadhi with hot bowl of khichdi. Our collection of Gujarati Dal and Kadhi has many varieties of kadhi recipes like the Bhatia Kadhi, Gujarati Suva Kadhi and Radish Koftas in Kadhi which can be relished with Gujarati Khichdis.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -288,7 +362,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Thepla</a></h2>
+                            <button data-modal-target="#modal6" class="btn-for-item">Thepla</button>
+                            <div class="modal" id="modal6">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Thepla</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Thepla are light as well as healthy. A good snack for children who don’t like greens, especially fenugreek. This way you can incorporate some greens in their diet. along with fenugreek you can also add some other greens like spinach or amaranth in the dough.</li>
+                                        <li>Thepla burns the excess calories and helps you in staying energized. Good for skin, eyes, and hair –the nutrients and vitamins present in Thepla help to promote glowing and healthy skin.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -321,7 +407,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Undhiyu</a></h2>
+                            <button data-modal-target="#modal7" class="btn-for-item">Undhiyu</button>
+                            <div class="modal" id="modal7">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Undhiyu</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Undhiyu is a one pot vegetable casserole dish that is the hallmark of Gujarati vegetarian cuisine. Generally preparing undhiyu takes a lot of time and needs patience. Traditionally the veggies are cooked or fried in batches.</li>
+                                        <li>This delicious recipe of surti undhiyu does not take much time, as all the veggies along with the Methi muthia are steamed in a pressure cooker. Though, if you want you can also cook the veggies in a large pot or pan. Thus the recipe is easy as well as healthy.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -368,7 +466,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">MASALA DOSA</a></h2>
+                            <button data-modal-target="#modal8" class="btn-for-item">Masala Dosa</button>
+                            <div class="modal" id="modal8">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Masala Dosa</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Masala dosa is crispy rice & lentil crepes that are stuffed with a spiced and savory potato filling. Masala dosa is crispy rice & lentil crepes that are stuffed with a spiced and savory potato filling.</li>
+                                        <li>It is made by soaking and grinding lentils and rice batter. This ground batter is then fermented overnight to give the dosa its characteristic soft and crispy texture.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -402,7 +512,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Rasam Rice</a></h2>
+                            <button data-modal-target="#modal9" class="btn-for-item">Rasam Rice</button>
+                            <div class="modal" id="modal9">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Rasam Rice</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Rasam rice is a nutritious south indian one pot meal recipe which is made from combining rice and rasam together. It is also known as rasam sadham in south indian homes.</li>
+                                        <li>This is very amazing in taste and it contains a lot of health benefiting nutrients. Rasam rice is a perfect remedy for cold and cough.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -435,7 +557,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Medu Vada</a></h2>
+                            <button data-modal-target="#modal10" class="btn-for-item">Medu Vada</button>
+                            <div class="modal" id="modal10">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Medu Vada</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Most South Indians consider breakfast incomplete without Medu Vada. Whether they have Idli, dosa, pongal or upma, they like to add a crispy, tasty and protein-rich urad dal vada to the platter.</li>
+                                        <li>In fact, when you have breakfast in a South Indian restaurant, even in the remote villages, you will be fascinated to see the waiter reel out the list of breakfast combos, almost all of them featuring vada! We serving them fresh with Sambhar and coconut chutney however is doubly delightful.</li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -470,7 +604,19 @@
                     </div>
                     <div class="product-content">
                         <div class="product-title">
-                            <h2><a href="">Buttermilk Sambar</a></h2>
+                            <button data-modal-target="#modal11" class="btn-for-item">Buttermilk Sambar</button>
+                            <div class="modal" id="modal11">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Buttermilk Sambar</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Buttermilk sambar or Yogurt sambar is the traditional sambar gets a makeover where lentils and buttermilk combine. This is a sambar variety made with yogurt and ground coconut masala paste. Unlike the regular sambar variety, it does not use tamarind for sourness. </li>
+                                        <li>Buttermilk/yogurt is extensively used in the Indian cuisine. It is one of the ways in which we hydrate ourselves during summer. </li>
+                                    </ul>
+                                </div>
+                              </div>
                         </div>
                         <div class="product-ratting">
                             <i class="fa fa-star"></i>
@@ -515,6 +661,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
