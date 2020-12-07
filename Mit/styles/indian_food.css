@@ -357,12 +357,20 @@ h6 {
     .product-grid .product-item {
         width: 33.33%;
     }
+
+    #searchItem {
+      width: 37%;
+    } 
 }
 
 @media (max-width: 768px) {
     .product-grid .product-item {
         width: 50%;
     }
+
+    #searchItem {
+      width: 60%;
+    } 
 }
 
 @media (max-width: 576px) {
@@ -524,7 +532,8 @@ h6 {
 
 /* Grid 1 - CSS complete */
 
- /* CSS for popup menu in JS on ItemNameClick event */
+/* CSS for JavaScript start */
+/* CSS for popup menu in JS on ItemNameClick event */
 .modal {
   position: fixed;
   top: 50%;
@@ -578,3 +587,31 @@ h6 {
 .modal-body ul li:last-child {
   margin-top: 10px;
 }
+
+/* Search Item by name - JS box CSS*/
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchItem{ 
+  margin-top: 15px;
+  margin-bottom: -20px;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+input[type=text] { 
+   width: 18%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+input[type=text]:focus { 
+  width: 30%; 
+  font-size: 16px;
+} 

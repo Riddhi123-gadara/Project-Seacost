@@ -16,7 +16,7 @@
     <!--For Responsive Page-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script defer src="../Mit/js/popupMenu.js"></script>
+    <script defer src="../Mit/js/search_popup.js"></script>
 </head>
 <body>
     <header class="header">
@@ -48,6 +48,11 @@
     </header>
 
     <main>
+        <!-- search box to find item -->
+        <div class="searchBar">
+            <input id="searchItem" onkeyup="search_item()" type="text" name="search" placeholder="Search Item By Name">
+        </div>
+
          <!-- Grid Style 1 Start -->
          <div class="grid-title">
             <h2>North Indian Dishes</h2>
