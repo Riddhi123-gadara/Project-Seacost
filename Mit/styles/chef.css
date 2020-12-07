@@ -371,6 +371,15 @@ h6 {
     .chef-geneal-description ul li:last-child{
       padding-top: 5%;
     }
+    #searchChef {
+      width: 37%;
+    } 
+}
+
+@media (max-width: 768px) {
+  #searchChef {
+    width: 60%;
+  } 
 }
 
 .product-grid .product-single {
@@ -532,3 +541,31 @@ h6 {
     color: #666666;
     text-decoration: line-through;
 }
+
+/* Search Item by name - JS box CSS*/
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchChef{ 
+  margin: 25px auto;
+  margin-bottom: -15px;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+input[type=text] { 
+   width: 18%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+input[type=text]:focus { 
+  width: 30%; 
+  font-size: 16px;
+} 
