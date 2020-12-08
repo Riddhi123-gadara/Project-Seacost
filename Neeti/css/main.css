@@ -289,6 +289,8 @@ ul{
     padding: 5px;
     padding-right: 30px;
     align-items: flex-end;
+    margin-left: 3%;
+    border-radius: 10%;
   } 
 
   .clear-left {
@@ -305,6 +307,7 @@ ul{
 .main-page-details1 {
   margin-top: 25px;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 2%;
 }
 
 
@@ -342,4 +345,7 @@ ul{
   padding: 10px 24px; 
   cursor: pointer; 
   font-size: large;
+  border-radius: 16px;
 }
+
+#more {display: none;}

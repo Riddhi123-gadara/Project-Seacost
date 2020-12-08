@@ -11,6 +11,25 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            </script>
+
         <header class="header">
             <nav class="nav">
                 <img class="logo-img" src="/Neeti/images/hotel_home/images/hotel-logo2.png" alt="no image">
@@ -44,15 +63,17 @@
             <div class="main-page-details1">
                 
                 <p> SeaCoast, New Delhi brings the finest and most contemporary Indian Luxury spa experience to the city  <strong>THE HEALING TOUCH.</strong>
-                     The launch of The Healing Touch further enhances Seacost's, New Delhi's position as the preferred location for urban rejuvenation.
-                     Blending ancient Indian wisdom with contemporary therapies,The  Healing Touch offers the best in Indian rejuvenation from Indian 
-                     aromatherapy massages, time-honoured Indian treatments, body scrubs, wraps, facials and salon services.
-                     The Healing Touch also promises a retreat for seekers of Yoga and Meditation, where dedicated therapists combine timeless wellness concepts with modern therapeutic
-                     wisom, to set a new benchmark in holistic treatments and therapies.</p>
+                    The launch of The Healing Touch further enhances Seacost's, New Delhi's position as the preferred <span id="dots">...</span><span id="more">
+                    location for urban rejuvenation.
+                    Blending ancient Indian wisdom with contemporary therapies,The  Healing Touch offers the best in Indian rejuvenation from Indian 
+                    aromatherapy massages, time-honoured Indian treatments, body scrubs, wraps, facials and salon services.
+                    The Healing Touch also promises a retreat for seekers of Yoga and Meditation, where dedicated therapists combine timeless wellness concepts with modern therapeutic
+                    wisom, to set a new benchmark in holistic treatments and therapies.</span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                 
             </div>
             <div>
-                <h2 style="margin-top:3%;"><u>Signature Experiences</u></h2>
+                <h2 style="margin-top:3%; margin-left: 3%;"><u>Signature Experiences</u></h2>
                 <img class="gallery" src="images/Spa-7.jpg" href="/images/Spa-7.jpg" alt="Spa image">
                 <div class="inline-details">
                     <ul>
@@ -66,7 +87,7 @@
             </div>
                 
             <div class="clear-left">
-                <h2 style="margin-top: 3%;"><u>Indian therapies</u></h2>
+                <h2 style="margin-top: 3%;margin-left: 3%;"><u>Indian therapies</u></h2>
                 <img class="gallery" src="images/Spa-10.jpg" href="/images/Spa-10" alt="Spa image">
                 <div class="inline-details">
                 <ul>
@@ -80,7 +101,7 @@
             </div>
 
             <div class="clear-left">
-                <h2 style="margin-top: 3%;"><u>Spa Indulgences</u></h2>
+                <h2 style="margin-top: 3%; margin-left: 3%;"><u>Spa Indulgences</u></h2>
                 <img class="gallery" src="images/Spa-1.jpg" href="/images/Spa-1" alt="Spa image" >
                 <div class="inline-details">
                   <ul>
@@ -92,7 +113,7 @@
             </div>
         
             <div class="clear-left">
-                <h2 style="margin-top: 3%;"><u>Body Scrubs and Wraps</u></h2>
+                <h2 style="margin-top: 3%;margin-left: 3%;"><u>Body Scrubs and Wraps</u></h2>
                 <img class="gallery" src="images/Spa-14.jpg" href="/images/Spa-14" alt="Spa image">
                 <div class="inline-details">
                 <ul>
@@ -104,7 +125,7 @@
             </div>
          
             <div class="clear-left">
-             <h2 style="margin-top: 3%;"><u>Yoga & Meditation</u></h2>
+             <h2 style="margin-top: 3%;margin-left: 3%;"><u>Yoga & Meditation</u></h2>
             <img class="gallery" src="images/Yoga-1.jpg" href="/images/Yoga-1.jpg" alt="Yoga image">
             <div class="inline-details">
             <ul>
