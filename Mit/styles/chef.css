@@ -553,10 +553,14 @@ h6 {
   margin: 25px auto;
   margin-bottom: -15px;
   padding: 15px; 
-  border-radius: 10px; 
+  padding-left: 40px;
+  border-radius: 20px; 
   font-size: 16px;
   font-family: sans-serif;
   color: #252525;
+  background-image:url(../images/icons8-chef-48.png); 
+  background-repeat: no-repeat; 
+  background-position: 2px 5px;
 }
 
 input[type=text] { 
