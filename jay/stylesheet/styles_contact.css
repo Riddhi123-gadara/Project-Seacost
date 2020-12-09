@@ -211,25 +211,18 @@ ul{
   .column2 {
     height: 650px;
     float: left;
-    width: 20%;
+    width: 30%;
     margin-top: 5%;
-    margin-left: 300px;
-    margin-bottom: 10%;
+    margin: 5%;
   }
 
-  .back-image{
-    width: 100%;
-    padding-top: 5%;
-    text-align: center;
-    clear: both;
-    background-image: url(../images/hero_background.jpg);
-    background-repeat: no-repeat;
-  }
 
   .message{
     color: var(--footer-color);
     border: 10px solid #333333;
     padding: 10px;
+    font-size: 40px;
+    margin: 20px;
     font-size: 20px;
   }
   .row3{
