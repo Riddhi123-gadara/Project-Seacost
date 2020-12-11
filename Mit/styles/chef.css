@@ -346,7 +346,7 @@ h6 {
     margin-top: 2%;
 }
 
-.grid-1-description {
+.grid-description {
     font-size: 18px;
     font-family: cursive;
     list-style: circle;
@@ -371,6 +371,15 @@ h6 {
     .chef-geneal-description ul li:last-child{
       padding-top: 5%;
     }
+    #searchChef {
+      width: 37%;
+    } 
+}
+
+@media (max-width: 768px) {
+  #searchChef {
+    width: 60%;
+  } 
 }
 
 .product-grid .product-single {
@@ -484,51 +493,83 @@ h6 {
 }
 
 /* --- Product Grid 1 --- */
-.product-grid.grid-1 .product-single:hover {
+.product-grid.grid .product-single:hover {
     box-shadow: 0 0 6px black;
 }
 
-.product-grid.grid-1 .product-single:hover img {
+.product-grid.grid .product-single:hover img {
     transform: scale(1.1);
     -webkit-filter: blur(1px);
     filter: blur(2px);
 }
 
 
-.product-grid.grid-1 .product-content {
+.product-grid.grid .product-content {
     padding: 15px;
 }
 
-.product-grid.grid-1 .product-title{
+.product-grid.grid .product-title{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
 
 
-.product-grid.grid-1 .product-title h2 a {
+.product-grid.grid .product-title h2 a {
     color: #1dbf71;
 }
 
-.product-grid.grid-1 .product-title h2 a:hover {
+.product-grid.grid .product-title h2 a:hover {
     color: #666666;
 }
 
-.product-grid.grid-1 .product-ratting i {
+.product-grid.grid .product-ratting i {
     display: inline-block;
     font-size: 16px;
     color: #1dbf71;
 }
 
-.product-grid.grid-1 .product-price h2 {
+.product-grid.grid .product-price h2 {
     display: inline-block;
     color: #1dbf71;
     font-size: 30px;
     font-weight: 350;
 }
 
-.product-grid.grid-1 .product-price h2:last-child {
+.product-grid.grid .product-price h2:last-child {
     margin-left: 10px;
     color: #666666;
     text-decoration: line-through;
 }
+
+/* Search Item by name - JS box CSS*/
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchChef{ 
+  margin: 25px auto;
+  margin-bottom: -15px;
+  padding: 15px; 
+  padding-left: 40px;
+  border-radius: 10px; 
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #252525;
+  background-image:url(../images/icons8-chef-48.png); 
+  background-repeat: no-repeat; 
+  background-position: 2px 5px;
+}
+
+input[type=text] { 
+   width: 18%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+input[type=text]:focus { 
+  width: 30%; 
+  font-size: 16px;
+} 

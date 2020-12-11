@@ -676,3 +676,44 @@ main {
 /* footer end */
 
 }
+
+/* CSS for internet connectivity box and update text */
+.status-header {
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.connectivity {
+  height: auto;
+  width: 400px;
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.status {
+  padding: 10px;
+  min-width: 120px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #eee;
+  text-align: center;
+  font-size: 40px;
+}
+
+.status.online {
+  border: 5px solid #41a700;
+  color: #41a700;
+}
+
+.status.offline {
+  border: 5px solid #f15c4f;
+  color: #f15c4f;
+}

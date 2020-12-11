@@ -357,12 +357,20 @@ h6 {
     .product-grid .product-item {
         width: 33.33%;
     }
+
+    #searchItem {
+      width: 37%;
+    } 
 }
 
 @media (max-width: 768px) {
     .product-grid .product-item {
         width: 50%;
     }
+
+    #searchItem {
+      width: 60%;
+    } 
 }
 
 @media (max-width: 576px) {
@@ -489,13 +497,19 @@ h6 {
     font-weight: bold;
 }
 
-.product-grid.grid-1 .product-title h2 a {
-    color: #1dbf71;
+.btn-for-item {
+  border: none;
+  background-color: inherit;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  color: #1dbf71;
 }
 
-.product-grid.grid-1 .product-title h2 a:hover {
-    color: #666666;
-}
+.btn-for-item:hover {color: var(--footer-color);}
 
 .product-grid.grid-1 .product-ratting i {
     display: inline-block;
@@ -518,6 +532,90 @@ h6 {
 
 /* Grid 1 - CSS complete */
 
-/* Popup on onMouserOver/Out action 
- * Popup container - can be anything you want 
- */
+/* CSS for JavaScript start */
+/* CSS for popup menu in JS on ItemNameClick event */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  filter: drop-shadow(6px 6px 8px var(--heading-color));
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  text-align: left;
+  background-color: #f5f5f8;
+  width: 500px;
+  max-width: 80%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.modal-body {   
+  padding: 15px 30px;
+}
+
+.modal-body ul li {
+  list-style-type: disc;
+}
+.modal-body ul li:last-child {
+  margin-top: 10px;
+}
+
+/* Search Item by name - JS box CSS*/
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchItem{ 
+  margin-top: 15px;
+  margin-bottom: -20px;
+  padding: 15px; 
+  padding-left: 40px;
+  border-radius: 10px; 
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #252525;
+  background-image:url(../images/icons8-cutlery-50.png); 
+  background-repeat: no-repeat; 
+  background-position: 2px 5px;
+}
+
+input[type=text] { 
+   width: 18%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+input[type=text]:focus { 
+  width: 30%; 
+  font-size: 16px;
+} 

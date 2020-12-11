@@ -211,38 +211,100 @@ ul{
   .column2 {
     height: 650px;
     float: left;
-    width: 20%;
+    width: 30%;
     margin-top: 5%;
-    margin-left: 300px;
-    
+    margin: 5%;
   }
 
-  .row2{
-    width: 100%;
-    padding-top: 5%;
-    height: auto;
-    text-align: center;
-    
+
+  .message{
+    color: var(--footer-color);
+    border: 10px solid #333333;
+    padding: 10px;
+    font-size: 40px;
+    margin: 20px;
+    font-size: 20px;
   }
   .row3{
     width: 100%;
     padding: 10%;
     height: auto;
     text-align: center;
-    
+    margin: 20px;
   }
 form{
   width: 150%;
-  background-color: var(--green-light);
+  background-color: var(--header-color);
   color: white;
   border: gray ;
   padding: 20px;
-  
+}
+.myform h1{
+  text-align: center;
 }
 
 legend{
   padding: 10px;
   font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color:var(--green-light);
+  color: white;
+  font-size: 30px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
   /*Header responsive */
   * {box-sizing: border-box;}
@@ -375,7 +437,16 @@ legend{
   /* footer end */
 }
 
+.map-position {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 iframe{
   width:80%;
   height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
+

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./styles/style_index.css">
     <!--For Responsive Page-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External JS -->
+    <script defer src="js/internet_check.js"></script>
 </head>
 
 <body>
@@ -35,8 +38,6 @@
                     </li>
                 </ul>
             </div>
-
-
         </nav>
     </header>
     
@@ -129,6 +130,14 @@
             </div>
         </div>
 
+        <!-- Check internet connectivity constantly -->
+        <div class="status-header">
+            <h2>Your internet connectivity status</h2>
+        </div>
+        <div class="connectivity">
+            <h2 class="status"></h2>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -151,7 +160,6 @@
                         <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </footer>
